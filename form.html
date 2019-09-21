@@ -1,75 +1,139 @@
-<form>
-    First Name:<br>
-    <input type="text" name="firstname"><br>
-    Last Name: <br>
-    <input type="text" name="lastname"><br>
-    Middle Name:<br>
-    <input type="text" name="middlename"><br>
+<form action="" method="post">
+    <fieldset>
+        <legend><b>Personal information</b></legend>
+        First Name:<br>
+        <input type="text" name="firstname"><br>
+        Last Name: <br>
+        <input type="text" name="lastname"><br>
+        Middle Name:<br>
+        <input type="text" name="middlename"><br>
+    </fieldset>
 
-    This is:<br>
-    <input type="radio" name="registrationform" value="New Registration">New Registration<br>
-    <input type="radio" name="registrationform" value="Record Update">Record Update/Change(e.g. Address, Party Affiliation, Name, Signature)<br>
-    <input type="radio" name="registrationform" value="Voter Card Update Request">Request to replace voter information card<br>
+    <fieldset>
+        <legend><b>Reason for Form</b></legend>
+        This is:<br>
+        <input type="radio" name="registrationform" value="New Registration">New Registration<br>
+        <input type="radio" name="registrationform" value="Record Update">Record Update/Change(e.g. Address, Party Affiliation, Name, Signature)<br>
+        <input type="radio" name="registrationform" value="Voter Card Update Request">Request to replace voter information card<br>
+    </fieldset>
 
-    Are you a Cititzen of the United States?<br>
-    <input type="radio" name="Citizen" value="Yes">Yes<br>
-    <input type="radio" name="Citizen" value="No">No<br>
-    
-    Felony charges<br>
-    <input type="radio" name="Felony" value="Not Convicted">I affirm that I have not committed a felony.<br>
-    <input type="radio" name="Felony" value="Convicted, but restored rights">I have been Convicted of a felony, I affirm that my voting rights have been restored by the board of Executive Clemency.<br>
-    <input type="radio" name="Felony" value="Convicted, on Parole">If I have been convicted of a felony, I affrim my votings have been restored upon completion of my sentence and parole.<br>
+    <fieldset>
+        <legend><b>Citizenship status</b></legend>
+        Are you a Cititzen of the United States?<br>
+        <input type="radio" name="Citizen" value="Yes">Yes<br>
+        <input type="radio" name="Citizen" value="No">No<br>
+    </fieldset>
 
-    Drivers license number<br>
-    <input type="number" name="driverslicense"><br>
+    <fieldset>
+        <legend><b>Felony Status</b></legend>
+        Felony charges<br>
+        <input type="radio" name="Felony" value="Not Convicted">I affirm that I have not committed a felony.<br>
+        <input type="radio" name="Felony" value="Convicted, but restored rights">I have been Convicted of a felony, I affirm that my voting rights have been restored by the board of Executive Clemency.<br>
+        <input type="radio" name="Felony" value="Convicted, on Parole">If I have been convicted of a felony, I affrim my votings have been restored upon completion of my sentence and parole.<br>
+    </fieldset>
 
-    Social security number<br>
-    <input type="number" name="SSN"><br>
+    <fieldset>
+        <legend><b>Drivers License Number</b></legend>
+        Drivers license number<br>
+        <input type="number" name="driverslicense"><br>
+    </fieldset>
 
-    Address where you live:<br>
-    <input type="text" name="currentaddress"><br>
+    <fieldset>
+        <legend><b>Social Security Number</b></legend>
+        Social security number<br>
+        <input type="number" name="SSN"><br>
+    </fieldset>
 
-    Mailing Address(If different from above address):<br>
-    <input type="text" name="mailingaddress"><br>
+    <fieldset>
+        <legend><b>Current Address</b></legend>
+        Address:<br>
+        <input type="text" name="currentaddress"><br>
+        City:<br>
+        <input type="text" name="city"><br>
+        State:<br>
+        <input type="text" name="state"><br>
+        Zip Code:<br>
+        <input type="text" name="zipcode"><br>
+    </fieldset>
 
-    Address where you last registered to vote:<br>
-    <input type="text" name="lastvotingaddress"><br>
+    <fieldset>
+        <legend><b>Mailing Address(if different from above)</b></legend>
+        Address:<br>
+        <input type="text" name="mailingaddress"><br>
+        City:<br>
+        <input type="text" name="city"><br>
+        State:<br>
+        <input type="text" name="state"><br>
+        Zip Code:<br>
+        <input type="text" name="zipcode"><br>
+    </fieldset>
 
-    Former name(if name has changed):<br>
-    <input type="text" name="formername"><br>
+    <fieldset>
+            <legend><b>Last Address where you registered to vote(only fill out if different from curren address)</b></legend>
+            Address:<br>
+            <input type="text" name="lastvotingaddress"><br>
+            City:<br>
+            <input type="text" name="city"><br>
+            State:<br>
+            <input type="text" name="state"><br>
+            Zip Code:<br>
+            <input type="text" name="zipcode"><br>
+        </fieldset>
 
-    Gender<br>
-    <input type="radio" name="Gender" value="Male">M<br>
-    <input type="radio" name="Gender" value="Female">F<br>
+    <fieldset>
+        <legend><b>Former Name(if name has changed)</b></legend>
+        Former name:<br>
+        <input type="text" name="formername"><br>
+    </fieldset>
 
+    <fieldset>
+        <legend><b>Gender</b></legend>
+        Gender<br>
+        <input type="radio" name="Gender" value="Male">M<br>
+        <input type="radio" name="Gender" value="Female">F<br>
+    </fieldset>
 
-    State or Country of Brith<br>
-    <input type="text" name="birthstate"><br>
+    <fieldset>
+        <legend><b>State or Country of Birth</b>></legend>
+        State or Country of Brith<br>
+        <input type="text" name="birthstate"><br>
+    </fieldset>
 
-    Telephone Number(optional):<br>
-    <input type="number" name="phone"><br>
+    <fieldset>
+        <legend><b>Telephone Number</b></legend>
+        Telephone Number(optional):<br>
+        <input type="number" name="phone"><br>
+    </fieldset>
 
-    Party Affiliation:<br>
-    <input type="radio" name="Affiliation" value="Republican">Republican<br>
-    <input type="radio" name="Affiliation" value="Democrat">Democrat<br>
-    <input type="radio" name="Affiliation" value="Non Affiliated"> Non-Affiliated<br>
-    <input type="radio" name="Affiliaiton" value="Minor Party"> Minor party, List name<br>
-    <input type="text" name="Affiliated"><br>
+    <fieldset>
+        <legend><b>Party Affiliaiton</b></legend>
+        Party Affiliation:<br>
+        <input type="radio" name="Affiliation" value="Republican">Republican<br>
+        <input type="radio" name="Affiliation" value="Democrat">Democrat<br>
+        <input type="radio" name="Affiliation" value="Non Affiliated"> Non-Affiliated<br>
+        <input type="radio" name="Affiliaiton" value="Minor Party"> Minor party, List name<br>
+        <input type="text" name="Affiliated"><br>
+    </fieldset>
 
-    Race/Ethnicity:<br>
-    <input type="radio" name="Race" value="Alaskan Native/American Indian">Alaskan Native/American Indian<br>
-    <input type="radio" name="Race" value="Asian/Pacific Islander">Asian/Pacific Islander<br>
-    <input type="radio" name="Race" value="Hispanic">Hispanic<br>
-    <input type="radio" name="Race" value="Black">Black<br>
-    <input type="radio" name="Race" value="White">White<br>
-    <input type="radio" name="Race" value="Multi-racial">Multi-Racial<br>
-    <input type="radio" name="Race" value="Other">Other<br>
+    <fieldset>
+        <legend><b>Race/Ethnicity</b></legend>
+        Race/Ethnicity:<br>
+        <input type="radio" name="Race" value="Alaskan Native/American Indian">Alaskan Native/American Indian<br>
+        <input type="radio" name="Race" value="Asian/Pacific Islander">Asian/Pacific Islander<br>
+        <input type="radio" name="Race" value="Hispanic">Hispanic<br>
+        <input type="radio" name="Race" value="Black">Black<br>
+        <input type="radio" name="Race" value="White">White<br>
+        <input type="radio" name="Race" value="Multi-racial">Multi-Racial<br>
+        <input type="radio" name="Race" value="Other">Other<br>
+    </fieldset>
 
-    Merchant Marine:<br>
-    <input type="radio" name="Marine" value="ActiveMarine">I am an active duty Uniformed services or Merchant Marine member.<br>
-    <input type="radio" name="Marine" value="Spouse">I am a spouse or a dependent of an active duty uniformed services or merchant marine member.<br>
-    <input type="radio" name="Marine" value="Citizenonforeignsoil">I am a U.S. citizen residing outside of the U.S.<br>
-
+    <fieldset>
+        <legend><b>Merchant Marine</b></legend>
+        Merchant Marine:<br>
+        <input type="radio" name="Marine" value="ActiveMarine">I am an active duty Uniformed services or Merchant Marine member.<br>
+        <input type="radio" name="Marine" value="Spouse">I am a spouse or a dependent of an active duty uniformed services or merchant marine member.<br>
+        <input type="radio" name="Marine" value="Citizenonforeignsoil">I am a U.S. citizen residing outside of the U.S.<br>
+    </fieldset>
 
     <br><br><input type="radio" name="Assisstence" value="Assisstence"><b>I will need Assisstence voting</b><br>
 
