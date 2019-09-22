@@ -39,8 +39,8 @@ def create_dict():
         'SS_2': '3',
         'SS_3': '4',
         'SS_4': '5',
-        'Last Name': request.form['lastname', validators.required],
-        'First Name': request.form['firstname', validators.required],
+        'Last Name': request.form['lastname'],
+        'First Name': request.form['firstname'],
         'Middle Name': request.form['middlename'],
         'numbers': 'sr.',
         'Address Where You Live legal residenceno PO Box': request.form['currentaddress'],
@@ -85,7 +85,7 @@ def create_dict():
         'undefined_party': '',
         'undefined_Race': '',
         'SIGN MARK HERE': 'sdddd',
-        'Signature': request.form['Signature', validators.required],
+        'Signature': request.form['Signature'],
         'Date': today
     }
     return data_dict
